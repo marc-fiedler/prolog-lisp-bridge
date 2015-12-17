@@ -1,0 +1,7 @@
+#!/bin/bash
+
+gcc main.c -I/usr/lib/swi-prolog/include/ -fpic -c
+gcc -shared -o main.so main.o
+gcc -o main main.o -lswipl
+
+swig2.0 -cffi -module main main.c

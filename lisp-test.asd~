@@ -1,0 +1,10 @@
+;;; Definition for test functions that are defined inside the prolog-test.c
+  (defpackage :lisp-test-user
+    (:use :common-lisp))
+ 
+  (in-package :prolog-test-user)
+
+  (defun member (x)
+    (*3 x))
+
+
